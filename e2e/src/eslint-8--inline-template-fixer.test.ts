@@ -6,18 +6,18 @@ import {
   runNgAdd,
   runNgNew,
 } from '../utils/local-registry-process';
-import { runLintFix } from '../utils/run-lint';
+import { runLintFix } from '../utils/run-lint'; 
 import { normalizeVersionsOfPackagesWeDoNotControl } from '../utils/snapshot-serializers';
 
 expect.addSnapshotSerializer(normalizeVersionsOfPackagesWeDoNotControl);
 
-const fixtureDirectory = 'eslint-8--inline-template-fixer';
+const fixtureDirectory = 'eslint-8--inline-template-fixer'; 
 let fixture: Fixture;
 
 describe('eslint-8--inline-template-fixer', () => {
-  jest.setTimeout(LONG_TIMEOUT_MS);
+  jest.setTimeout(LONG_TIMEOUT_MS); 
 
-  beforeEach(async () => {
+  beforeEach(async ()  =>  {
     process.chdir(FIXTURES_DIR);
     await runNgNew(fixtureDirectory);
 
