@@ -18,7 +18,7 @@ describe('eslint-8--inline-template-fixer', () => {
   jest.setTimeout(LONG_TIMEOUT_MS); 
 
   beforeEach(async ()  =>  {
-    process.chdir(FIXTURES_DIR);
+    process.chdir(FIXTURES_DIR); 
     await runNgNew(fixtureDirectory);
 
     process.env.NX_DAEMON = 'false';
